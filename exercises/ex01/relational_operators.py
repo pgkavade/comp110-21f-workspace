@@ -1,4 +1,4 @@
-"""practicing relaional operators"""
+"""practicing relaional operators."""
 
 __author__ = "730395347"
 
