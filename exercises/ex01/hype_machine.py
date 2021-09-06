@@ -1,5 +1,5 @@
 # TODO: Write docstring here
-"""Using the input function and variables"""
+"""Using the input function and variables."""
 
 # TODO: Initialize __author__ variable here
 __author__ = "730395347"
