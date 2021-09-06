@@ -16,4 +16,4 @@ if repeat > 0:
         concat += " " + beat
     print(concat)
 else:
-    print("No beat. . .")
+    print("No beat...")
