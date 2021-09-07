@@ -8,7 +8,6 @@ __author__ = "730395347"
 letter: str = input("What letter do you want to seach for?: ")
 word: str = input("Enter a word: ")
 num: int = 0
-find: str = word[num]
 count: int = 0
 
 while (num < len(word)):
