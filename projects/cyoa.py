@@ -11,8 +11,8 @@ levelThreeRules: str = "LEVEL 3 mutliplies your score by a random number. The ga
 correct: str = ", you guessed correctly! "
 player: str = "" 
 points: int = 0
-smile: str = '\U0001F600'
-again: str = '\U0001F914'
+NAMED_CONSTANT: str = '\U0001F600'
+NAMED_CONSTANT1: str = '\U0001F914'
 total: str = " points in total! "
 won: str = " won "
 bye: str = ", we are sorry to see you go! "
@@ -82,11 +82,11 @@ def levelOne() -> None:
             x = 1
         if (guess == 0):
             print(f'{player}{bye}')
-            print(f'{player}{won}{str(points)}{total}{smile}')
+            print(f'{player}{won}{str(points)}{total}{NAMED_CONSTANT}')
         if ((guess != num) & (guess != 0)):
-            print(f'{player}{incorrect}{again}')
+            print(f'{player}{incorrect}{NAMED_CONSTANT1}')
     points = points + point1
-    print(f'{player}{won}{str(points)}{total}{smile}')
+    print(f'{player}{won}{str(points)}{total}{NAMED_CONSTANT}')
 
 
 def levelTwo() -> None:
@@ -107,11 +107,11 @@ def levelTwo() -> None:
             x = 1
         if (guess == 0):
             print(f'{player}{bye}')
-            print(f'{player}{won}{str(points)}{total}{smile}')
+            print(f'{player}{won}{str(points)}{total}{NAMED_CONSTANT}')
         if ((guess != num) & (guess != 0)):
-            print(f'{player}{incorrect}{again}')
+            print(f'{player}{incorrect}{NAMED_CONSTANT1}')
     points = points + point1
-    print(f'{player}{won}{str(points)}{total}{smile}')
+    print(f'{player}{won}{str(points)}{total}{NAMED_CONSTANT}')
 
 
 def increaseScore(points: int) -> int:
@@ -124,10 +124,10 @@ def increaseScore(points: int) -> int:
         num = randint(1, 1000)
         print(f'{randNum}{str(num)}')
         points = points * num 
-        print(f'{player}{won}{str(points)}{total}{smile}')
+        print(f'{player}{won}{str(points)}{total}{NAMED_CONSTANT}')
     if (pick == 0):
         print(f'{player}{bye}')
-        print(f'{player}{won}{str(points)}{total}{smile}')
+        print(f'{player}{won}{str(points)}{total}{NAMED_CONSTANT}')
     return(points)
 
 
