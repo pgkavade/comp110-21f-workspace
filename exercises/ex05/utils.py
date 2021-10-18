@@ -24,14 +24,23 @@ def only_evens(list1: list[int]):
 def sub(list1: list[int], x: int, y: int):
     """Generates a List which is a subset of the given list, between the specified start index and the end index - 1."""
     list2: list[int] = []
+    item: int = x
+    
     if len(list1) == 0:
         return list2
-    if x & y > len(list1):
+    if x > len(list1):
         return list2
-    if x & y < 0:
+    if y < 0:
         return list2
+    if y > len(list1):
+        item: int = 0
+    if x < 0:
+        item: int = 0
     else:
-        list2 = list1[x:y]
+        for item in list1:
+            if x < y:
+                list2.append(list1[x])
+                x += 1
         return list2
 
 
