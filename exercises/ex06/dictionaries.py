@@ -34,6 +34,6 @@ def favorite_color(dict1: dict[str, str]) -> str:
 def count(list1: list[str]) -> dict[str, int]:
     """Dictionary where each value associated is the count of the number of times that value appeared in the input list."""
     dict1 = {}
-    for i in list1:
-        dict1[i] = count.get(i, 0) + 1
+    for c in range(len(list1)):
+        dict1[list1[c]] = list1.count(list1[c])
     return dict1
